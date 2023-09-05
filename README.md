@@ -44,6 +44,8 @@ You can run DeepMSProfiler using the following command:
 ```bash
 python mainRun.py -data ../example/data/ -label ../example/label.txt -out ../jobs -run_train -run_pred -run_feature
 ```
+We provide a pre-trained model based on 859 serum metabolomics samples (210 healthy individuals, 323 lung nodules, 326 lung cancer) for academic use.
+
 **Command Line Arguments:**
 
     -data: Specifies the path to the raw metabolomics data. Default is ../example/data/.
@@ -83,7 +85,7 @@ We welcome contributions to this project! If you would like to contribute, pleas
 
 ## License
 
-Copyright [Yongjie Deng] 
+Copyright by Yongjie Deng. 
 
 This project is licensed under the Apache License, Version 2.0 and is open for any academic use. Papers related to this project will be submitted, please cite for use and contact the author for data acquisition.
 
