@@ -3,6 +3,7 @@
 
 Welcome to DeepMSProfiler, an innovative data analysis tool focused on liquid chromatography-mass spectrometry (LC-MS) data. It harnesses the potential of deep learning to process complex data from different diseases and generate unique disease features.
 
+## Introduction
 
 Unlike traditional metabolomics data analysis tools, DeepMSProfiler is a tool for mining global features from raw metabolomics data. It takes raw metabolomics data from different disease groups as input and provides three main outputs:
 1. Sample disease type labels.
