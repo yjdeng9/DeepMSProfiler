@@ -107,7 +107,7 @@ Model Parameters:
 
 - Other Options:
 
-- -models: Specifies the models to be used for prediction, e.g., 'use_old'.
+ -    `-models`: Specifies the models to be used for prediction, e.g., 'use_old'.
     -mode: Specifies the mode, e.g., 'ensemble'.
     -boost: Enables boosting mode (Boolean).
     -plot_auc: Plots the AUC curve (Boolean).
