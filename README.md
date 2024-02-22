@@ -7,9 +7,8 @@ Welcome to ``DeepMSProfiler``, an innovative data analysis tool focused on liqui
 
 # Contents
 - [Overview](#overview)
-- [Documentation](#documentation)
 - [System Requirements](#system-requirements)
-- [Installation Guide](#installation-guide)
+- [Installation Guide](#Installation-guide)
 - [Demo](#Demo)
 - [License](#license)
 - [Citation](#Citation)
@@ -57,21 +56,19 @@ The ``DeepMSProfiler`` package development version has been tested on CentOS 7 b
 
 ### Python Dependencies
 
-Please refer to the `install_dependencies.sh` script for installing Python dependencies.
-
+Please refer to the `requirements.txt` script for installing Python dependencies.
 
 
 # Installation Guide
 
+```
+git clone https://github.com/yjdeng9/DeepMSProfiler
+cd DeepMSProfiler
+bash install_dependencies.sh
 
-
+```
 
 # Demo
-
-To get started with ``DeepMSProfiler``, follow these steps:
-1. Clone this repository to your local machine.
-2. Install the required dependencies (install_dependencies.sh).
-3. Run the main script (mainRun.py) with your input data with parameters changing if you need.
    
 
 You can run ``DeepMSProfiler`` using the following command:
