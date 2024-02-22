@@ -8,8 +8,8 @@ Welcome to ``DeepMSProfiler``, an innovative data analysis tool focused on liqui
 
 # Contents
 - [Overview](#overview)
-- [System Requirements](#system-requirements)
-- [Installation Guide](#Installation-guide)
+- [System Requirements](#System-Requirements)
+- [Installation Guide](#Installation-Guide)
 - [Demo](#Demo)
 - [License](#license)
 - [Citation](#Citation)
@@ -85,30 +85,31 @@ We provide a pre-trained model based on 859 serum metabolomics samples (210 heal
 
 **Command Line Arguments:**
 
-    -data: Specifies the path to the raw metabolomics data. Default is ../example/data/.
-    -label: Specifies the path to the sample disease type labels file. Default is ../example/label.txt.
-    -out: Specifies the directory where the output results will be saved. Default is ../jobs.
+- **Data Options**:
+  -    `-data`: Specifies the path to the raw metabolomics data. Default is `../example/data/`.
+  -    `-label`: Specifies the path to the sample disease type labels file. Default is `../example/label.txt`.
+  -    `-out`: Specifies the directory where the output results will be saved. Default is `../jobs`.
 
-Run Options:
+- **Run Options**:
 
-    -run_train: Initiates the training process (Boolean, default is False).
-    -run_pred: Initiates the prediction process (Boolean, default is False).
-    -run_feature: Initiates the feature extraction process (Boolean, default is True).
+  -    `-run_train`: Initiates the training process (Boolean, default is `False`).
+  -    `-run_pred`: Initiates the prediction process (Boolean, default is `False`).
+  -    `-run_feature`: Initiates the feature extraction process (Boolean, default is `True`).
 
-Model Parameters:
+- **Model Parameters**:
 
-    -arch: Specifies the model architecture, e.g., 'DenseNet121'.
-    -pretrain: Specifies the path to the pre-trained model, default is None.
-    -lr: Sets the learning rate, default is 1e-4.
-    -opt: Specifies the optimizer, e.g., 'adam'.
-    -batch: Sets the batch size, default is 8.
-    -epoch: Sets the number of training epochs, default is 2.
-    -run: Specifies the number of runs, default is 10.
+  -    `-arch`: Specifies the model architecture, e.g., `'DenseNet121'`.
+  -    `-pretrain`: Specifies the path to the pre-trained model, default is `None`.
+  -    `-lr`: Sets the learning rate, default is 1e-4.
+  -    `-opt`: Specifies the optimizer, e.g., `'adam'`.
+  -    `-batch`: Sets the batch size, default is `8`.
+  -    `-epoch`: Sets the number of training epochs, default is `2`.
+  -    `-run`: Specifies the number of runs, default is `10`.
 
-- Other Options:
+- **Other Options**:
 
-  -    `-models`: Specifies the models to be used for prediction, e.g., 'use_old'.
-  -    `-mode`: Specifies the mode, e.g., 'ensemble'.
+  -    `-models`: Specifies the models to be used for prediction, e.g., `'use_old'`.
+  -    `-mode`: Specifies the mode, e.g., `'ensemble'`.
   -    `-boost`: Enables boosting mode (Boolean).
   -    `-plot_auc`: Plots the AUC curve (Boolean).
   -    `-plot_cm`: Plots the confusion matrix (Boolean).
