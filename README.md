@@ -107,11 +107,11 @@ Model Parameters:
 
 - Other Options:
 
- -    `-models`: Specifies the models to be used for prediction, e.g., 'use_old'.
-    -mode: Specifies the mode, e.g., 'ensemble'.
-    -boost: Enables boosting mode (Boolean).
-    -plot_auc: Plots the AUC curve (Boolean).
-    -plot_cm: Plots the confusion matrix (Boolean).
+  -    `-models`: Specifies the models to be used for prediction, e.g., 'use_old'.
+  -    `-mode`: Specifies the mode, e.g., 'ensemble'.
+  -    `-boost`: Enables boosting mode (Boolean).
+  -    `-plot_auc`: Plots the AUC curve (Boolean).
+  -    `-plot_cm`: Plots the confusion matrix (Boolean).
 
 Please adjust and expand this explanation based on the specific parameters and usage of your project. This example will help users understand how to run your project and utilize different command-line arguments.
 
