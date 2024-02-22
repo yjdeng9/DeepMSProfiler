@@ -2,23 +2,24 @@
 # DeepMSProfiler
 
 Welcome to DeepMSProfiler, an innovative data analysis tool focused on liquid chromatography-mass spectrometry (LC-MS) data. It harnesses the potential of deep learning to process complex data from different diseases and generate unique disease features.
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-## Introduction
+
+- [Overview](#overview)
+- [Documentation](#documentation)
+- [System Requirements](#system-requirements)
+- [Installation Guide](#installation-guide)
+- [Demo](#Demo)
+- [License](#license)
+- [Citation](#Citation)
+- [Issues](https://github.com/yjdeng9/DeepMSProfiler/issues)
+- 
+# overview
 
 Unlike traditional metabolomics data analysis tools, DeepMSProfiler is a tool for mining global features from raw metabolomics data. It takes raw metabolomics data from different disease groups as input and provides three main outputs:
 1. Sample disease type labels.
 2. Heatmaps depicting the correlation of different metabolite signals with diseases.
 3. Disease-associated metabolite-protein network plots.
-
-## Realated Paper
-
-Paper is in the submission process.
-
-**An explainable end-to-end deep learning method for direct analysis of mass spectrometry data to reveal disease-specific metabolic profiles**
-
-Yongjie Deng, Weizhong Li and et al.
-
-![image](https://github.com/yjdeng9/DeepMSProfiler/assets/130525414/1ce3d2e8-60eb-40bf-afa8-ffb5dddb6b25)
 
 
 
@@ -37,7 +38,7 @@ To get started with DeepMSProfiler, follow these steps:
 2. Install the required dependencies (install_dependencies.sh).
 3. Run the main script (mainRun.py) with your input data with parameters changing if you need.
 
-## Example Usage
+# Demo
 
 You can run DeepMSProfiler using the following command:
 
@@ -83,11 +84,26 @@ Please adjust and expand this explanation based on the specific parameters and u
 We welcome contributions to this project! If you would like to contribute, please follow the guidelines outlined in the project's README file. Fork the repository, make your changes, and submit a pull request with a clear explanation of the modifications you've made.
 
 
-## License
+# License
 
 Copyright by Yongjie Deng. 
 
 This project is licensed under the Apache License, Version 2.0 and is open for any academic use. Papers related to this project will be submitted, please cite for use and contact the author for data acquisition.
+
+
+# Citation
+
+Paper is in the submission process.
+
+For usage of the package and associated manuscript, please cite 
+
+**An explainable end-to-end deep learning method for direct analysis of mass spectrometry data to reveal disease-specific metabolic profiles**
+
+Yongjie Deng, Weizhong Li and et al.
+
+![image](https://github.com/yjdeng9/DeepMSProfiler/assets/130525414/1ce3d2e8-60eb-40bf-afa8-ffb5dddb6b25)
+
+
 
 ## Contact
 
