@@ -14,6 +14,7 @@ Welcome to ``DeepMSProfiler``, an innovative data analysis tool focused on liqui
 - [Citation](#Citation)
 - [Issues](https://github.com/yjdeng9/DeepMSProfiler/issues)
 
+
   
 # Overview
 
@@ -23,7 +24,6 @@ Unlike traditional metabolomics data analysis tools, ``DeepMSProfiler`` is a too
 3. Disease-associated metabolite-protein network plots.
 
 ![image](https://github.com/yjdeng9/DeepMSProfiler/assets/130525414/1ce3d2e8-60eb-40bf-afa8-ffb5dddb6b25)
-
 
 
 ## Why DeepMSProfiler?
@@ -40,13 +40,15 @@ DeepMSProfiler stands out due to the following advantages:
 
 Ensure that your system meets these requirements before proceeding with installation and usage.
 
-## 1. Hardware Requirements
+
+## Hardware Requirements
 
 The ``DeepMSProfiler`` package is designed to support development in environments with CUDA capability, but it is also compatible with CPU-only environments. The hardware requirements are as follows:
 
 - **Standard Computer:** The meta package requires a standard computer with sufficient RAM to support in-memory operations.
 
-## 2. Software Requirements
+
+## Software Requirements
 
 The ``DeepMSProfiler`` package development version has been tested on CentOS 7 but is also compatible with Windows environments. It is essential to ensure that the Python environment and dependencies are properly installed. The software requirements are as follows:
 
@@ -59,24 +61,26 @@ The ``DeepMSProfiler`` package development version has been tested on CentOS 7 b
 Please refer to the `requirements.txt` script for installing Python dependencies.
 
 
+
 # Installation Guide
 
 ```
 git clone https://github.com/yjdeng9/DeepMSProfiler
 cd DeepMSProfiler
 bash install_dependencies.sh
-
 ```
+
+
 
 # Demo
    
-
 You can run ``DeepMSProfiler`` using the following command:
 
 ```bash
 python mainRun.py -data ../example/data/ -label ../example/label.txt -out ../jobs -run_train -run_pred -run_feature
 ```
 We provide a pre-trained model based on 859 serum metabolomics samples (210 healthy individuals, 323 lung nodules, 326 lung cancer) for academic use.
+
 
 **Command Line Arguments:**
 
