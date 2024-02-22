@@ -36,7 +36,7 @@ DeepMSProfiler stands out due to the following advantages:
 
 
 
-# Software Requirements
+# System Requirements
 
 Ensure that your system meets these requirements before proceeding with installation and usage.
 
@@ -126,7 +126,8 @@ This project is licensed under the Apache License, Version 2.0 and is open for a
 
 Paper is in the submission process.
 
-For usage of the package and associated manuscript, please cite: **An explainable end-to-end deep learning method for direct analysis of mass spectrometry data to reveal disease-specific metabolic profiles** Yongjie Deng, Weizhong Li and et al.
+For usage of the package and associated manuscript, please cite:
+    **An explainable end-to-end deep learning method for direct analysis of mass spectrometry data to reveal disease-specific metabolic profiles.** Yongjie Deng, Weizhong Li and et al.
 
 
 
