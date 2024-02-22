@@ -116,9 +116,9 @@ Please adjust and expand this explanation based on the specific parameters and u
 
 This project is licensed under the Apache License, Version 2.0 and is open for any academic use. Papers related to this project will be submitted, please cite for use and contact the author for data acquisition.
 
-** Yongjie Deng - dengyj9@mail2.sysu.edu.cn **
+**Yongjie Deng - dengyj9@mail2.sysu.edu.cn**
 
-** Weizhong Li - liweizhong@mail.sysu.edu.cn **
+**Weizhong Li - liweizhong@mail.sysu.edu.cn**
 
 
 
@@ -126,11 +126,7 @@ This project is licensed under the Apache License, Version 2.0 and is open for a
 
 Paper is in the submission process.
 
-For usage of the package and associated manuscript, please cite 
-
-**An explainable end-to-end deep learning method for direct analysis of mass spectrometry data to reveal disease-specific metabolic profiles**
-
-Yongjie Deng, Weizhong Li and et al.
+For usage of the package and associated manuscript, please cite: **An explainable end-to-end deep learning method for direct analysis of mass spectrometry data to reveal disease-specific metabolic profiles** Yongjie Deng, Weizhong Li and et al.
 
 
 
