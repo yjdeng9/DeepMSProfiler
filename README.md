@@ -1,10 +1,11 @@
 
 # DeepMSProfiler
 
-Welcome to DeepMSProfiler, an innovative data analysis tool focused on liquid chromatography-mass spectrometry (LC-MS) data. It harnesses the potential of deep learning to process complex data from different diseases and generate unique disease features.
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
+Welcome to ``DeepMSProfiler``, an innovative data analysis tool focused on liquid chromatography-mass spectrometry (LC-MS) data. It harnesses the potential of deep learning to process complex data from different diseases and generate unique disease features.
 
+# Contents
 - [Overview](#overview)
 - [Documentation](#documentation)
 - [System Requirements](#system-requirements)
@@ -13,13 +14,16 @@ Welcome to DeepMSProfiler, an innovative data analysis tool focused on liquid ch
 - [License](#license)
 - [Citation](#Citation)
 - [Issues](https://github.com/yjdeng9/DeepMSProfiler/issues)
-- 
-# overview
 
-Unlike traditional metabolomics data analysis tools, DeepMSProfiler is a tool for mining global features from raw metabolomics data. It takes raw metabolomics data from different disease groups as input and provides three main outputs:
+  
+# Overview
+
+Unlike traditional metabolomics data analysis tools, ``DeepMSProfiler`` is a tool for mining global features from raw metabolomics data. It takes raw metabolomics data from different disease groups as input and provides three main outputs:
 1. Sample disease type labels.
 2. Heatmaps depicting the correlation of different metabolite signals with diseases.
 3. Disease-associated metabolite-protein network plots.
+
+![image](https://github.com/yjdeng9/DeepMSProfiler/assets/130525414/1ce3d2e8-60eb-40bf-afa8-ffb5dddb6b25)
 
 
 
@@ -31,16 +35,46 @@ DeepMSProfiler stands out due to the following advantages:
 - User-friendliness.
 - Suitable for both experts and beginners.
 
-## Getting Started
 
-To get started with DeepMSProfiler, follow these steps:
-1. Clone this repository to your local machine.
-2. Install the required dependencies (install_dependencies.sh).
-3. Run the main script (mainRun.py) with your input data with parameters changing if you need.
+
+# Software Requirements
+
+Ensure that your system meets these requirements before proceeding with installation and usage.
+
+## 1. Hardware Requirements
+
+The ``DeepMSProfiler`` package is designed to support development in environments with CUDA capability, but it is also compatible with CPU-only environments. The hardware requirements are as follows:
+
+- **Standard Computer:** The meta package requires a standard computer with sufficient RAM to support in-memory operations.
+
+## 2. Software Requirements
+
+The ``DeepMSProfiler`` package development version has been tested on CentOS 7 but is also compatible with Windows environments. It is essential to ensure that the Python environment and dependencies are properly installed. The software requirements are as follows:
+
+- **Operating System Compatibility:** CentOS 7 (tested), Windows (compatible)
+- **Python Version:** Python > 3.6
+- **TensorFlow Version:** TensorFlow == 2.2.0
+
+### Python Dependencies
+
+Please refer to the `install_dependencies.sh` script for installing Python dependencies.
+
+
+
+# Installation Guide
+
+
+
 
 # Demo
 
-You can run DeepMSProfiler using the following command:
+To get started with ``DeepMSProfiler``, follow these steps:
+1. Clone this repository to your local machine.
+2. Install the required dependencies (install_dependencies.sh).
+3. Run the main script (mainRun.py) with your input data with parameters changing if you need.
+   
+
+You can run ``DeepMSProfiler`` using the following command:
 
 ```bash
 python mainRun.py -data ../example/data/ -label ../example/label.txt -out ../jobs -run_train -run_pred -run_feature
@@ -79,16 +113,16 @@ Other Options:
 
 Please adjust and expand this explanation based on the specific parameters and usage of your project. This example will help users understand how to run your project and utilize different command-line arguments.
 
-## Contributing
-
-We welcome contributions to this project! If you would like to contribute, please follow the guidelines outlined in the project's README file. Fork the repository, make your changes, and submit a pull request with a clear explanation of the modifications you've made.
 
 
 # License
 
-Copyright by Yongjie Deng. 
-
 This project is licensed under the Apache License, Version 2.0 and is open for any academic use. Papers related to this project will be submitted, please cite for use and contact the author for data acquisition.
+
+** Yongjie Deng - dengyj9@mail2.sysu.edu.cn **
+
+** Weizhong Li - liweizhong@mail.sysu.edu.cn **
+
 
 
 # Citation
@@ -101,14 +135,7 @@ For usage of the package and associated manuscript, please cite
 
 Yongjie Deng, Weizhong Li and et al.
 
-![image](https://github.com/yjdeng9/DeepMSProfiler/assets/130525414/1ce3d2e8-60eb-40bf-afa8-ffb5dddb6b25)
 
 
-
-## Contact
-
-Yongjie Deng - dengyj9@mail2.sysu.edu.cn
-
-Weizhong Li - liweizhong@mail.sysu.edu.cn
 
 
