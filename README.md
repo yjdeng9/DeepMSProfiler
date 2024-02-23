@@ -10,6 +10,7 @@ Welcome to ``DeepMSProfiler``, an innovative data analysis tool focused on liqui
 - [Overview](#overview)
 - [System Requirements](#System-Requirements)
 - [Installation Guide](#Installation-Guide)
+- [Usage Guide](#usage-guide)
 - [Demo](#Demo)
 - [License](#license)
 - [Citation](#Citation)
@@ -76,7 +77,7 @@ bash install_dependencies.sh
 
 
 
-# Demo
+# Usage Guide
    
 You can run ``DeepMSProfiler`` using the following command:
 
@@ -118,14 +119,76 @@ We provide a pre-trained model based on 859 serum metabolomics samples (210 heal
 
 Please adjust and expand this explanation based on the specific parameters and usage of your project. This example will help users understand how to run your project and utilize different command-line arguments.
 
-
+# Demo
 **Run with Demo Data**
 ```bash
 python mainRun.py -data ../example/data/ -label ../example/label.txt -out ../jobs -run_train -run_pred -run_feature
 ```
 
+**Demo Log**
+```
+[INFO] Start in 2024-02-23 09:38:15
+[...]
+2024-02-23 09:38:16.529642: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1247] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 5072 MB memory) -> physical GPU (device: 0, name: Tesla P100-PCIE-16GB, pci bus id: 0000:02:00.0, compute capability: 6.0)
+2024-02-23 09:38:16.532211: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1247] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 6799 MB memory) -> physical GPU (device: 1, name: Tesla P100-PCIE-16GB, pci bus id: 0000:03:00.0, compute capability: 6.0)
+2024-02-23 09:40:14.107222: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2024-02-23 09:40:15.990060: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+[INFO] run in linux platform!
+[INFO] Start in ../jobs/jobs007! [2024-02-23 09:38:15]
+   FilePath   Label Dataset
+0   C01.npy  cancer    test
+1   C02.npy  cancer   train
+2   C03.npy  cancer   train
+3   C04.npy  cancer   train
+4   C05.npy  cancer   train
+5   C06.npy  cancer   train
+6   C07.npy  cancer   train
+7   C08.npy  cancer   train
+8   C09.npy  cancer    test
+9   H01.npy  health    test
+10  H02.npy  health   train
+11  H03.npy  health    test
+12  H04.npy  health   train
+13  H05.npy  health    test
+14  H06.npy  health   train
+15  H07.npy  health   train
+16  H08.npy  health   train
+17  H09.npy  health   train
+18  N01.npy  nodule   train
+19  N02.npy  nodule   train
+20  N03.npy  nodule   train
+21  N04.npy  nodule    test
+22  N05.npy  nodule   train
+23  N06.npy  nodule   train
+24  N07.npy  nodule   train
+25  N08.npy  nodule   train
+26  N09.npy  nodule   train
+[INFO] Step1 Done! [2024-02-23 09:38:16]
+[INFO] run model with args: DenseNet121 adam lr 1.0e-04 0
+[INFO] run model with args: DenseNet121 adam lr 1.0e-04 1
+[INFO] run model with args: DenseNet121 adam lr 1.0e-04 2
+[INFO] run model with args: DenseNet121 adam lr 1.0e-04 3
+[INFO] run model with args: DenseNet121 adam lr 1.0e-04 4
+[INFO] run model with args: DenseNet121 adam lr 1.0e-04 5
+[INFO] run model with args: DenseNet121 adam lr 1.0e-04 6
+[INFO] run model with args: DenseNet121 adam lr 1.0e-04 7
+[INFO] run model with args: DenseNet121 adam lr 1.0e-04 8
+[INFO] run model with args: DenseNet121 adam lr 1.0e-04 9
+[...]
+[INFO] Step2 Train Done! [2024-02-23 10:03:39]
+[...]
+[INFO] Step2 Pred Done! [2024-02-23 10:09:42]
+[INFO] Heatmap Shape:  (6, 341, 341)
+[INFO] Save Heatmap to:  ../jobs/jobs007/feature_results/ensemble_RISE.npy
+[INFO] Step2 Feature Done! [2024-02-23 10:25:30]
+[INFO] All Done! [2024-02-23 10:25:30]
+[INFO] End in 2024-02-23 10:25:30
+```
 
-
+**Run with Pretrain Model**
+```bash
+python mainRun.py -data ../example/data/ -label ../example/label.txt -out ../jobs -run_pred -pretrain ../example/pretrain_model -plot_auc -plot_cm
+```
 
 
 # License
