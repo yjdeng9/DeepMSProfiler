@@ -44,7 +44,7 @@ Ensure that your system meets these requirements before proceeding with installa
 
 ## Hardware Requirements
 
-The ``DeepMSProfiler`` package is designed to support development in environments with CUDA capability, but it is also compatible with CPU-only environments. The hardware requirements are as follows:
+The ``DeepMSProfiler`` package is designed to support development in environments with CUDA capability(`CUDA VERSION=10.1`), but it is also compatible with CPU-only environments. The hardware requirements are as follows:
 
 - **Standard Computer:** The meta package requires a standard computer with sufficient RAM to support in-memory operations.
 
