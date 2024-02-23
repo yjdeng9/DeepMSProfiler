@@ -65,11 +65,14 @@ Please refer to the `requirements.txt` script for installing Python dependencies
 
 # Installation Guide
 
+**Install from source code**
 ```
 git clone https://github.com/yjdeng9/DeepMSProfiler
 cd DeepMSProfiler
 bash install_dependencies.sh
 ```
+**Install time**
+  <10 minutes
 
 
 
