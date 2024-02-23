@@ -122,7 +122,7 @@ Please adjust and expand this explanation based on the specific parameters and u
 
 # Demo
 
-The demo data can be downloaded from **[Baidu Netdisk](https://pan.baidu.com/s/14v82CMsFZwcTI13iWaTWxA)** `https://pan.baidu.com/s/14v82CMsFZwcTI13iWaTWxA`, Passward: `acaa`
+The demo data can be downloaded from **[Baidu Netdisk](https://pan.baidu.com/s/14v82CMsFZwcTI13iWaTWxA):** `https://pan.baidu.com/s/14v82CMsFZwcTI13iWaTWxA`, **Passward:** `acaa`
 
 **Run with Demo Data**
 ```bash
