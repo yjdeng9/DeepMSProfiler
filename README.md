@@ -57,7 +57,7 @@ The ``DeepMSProfiler`` package development version has been tested on CentOS 7 b
 - **Operating System Compatibility:** CentOS 7 (tested), Windows (compatible)
 - **Python Version:** Python >= 3.6
 - **TensorFlow Version:** TensorFlow == 2.2.0
-- **Keras Version** Keras == 2.3.1
+- **Keras Version:** Keras == 2.3.1
 
 ### Python Dependencies
 
