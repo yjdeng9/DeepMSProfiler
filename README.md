@@ -65,26 +65,25 @@ Please refer to the `requirements.txt` script for installing Python dependencies
 
 # Installation Guide
 
-**Install from source code**
+**Install from source code:**
 ```
 git clone https://github.com/yjdeng9/DeepMSProfiler
 cd DeepMSProfiler
 bash install_dependencies.sh
 ```
-**Install time**
+**Install time:**
   <10 minutes
 
 
 
-# Demo
+# Usage Guide
    
 You can run ``DeepMSProfiler`` using the following command:
 
 ```bash
 python mainRun.py -data ../example/data/ -label ../example/label.txt -out ../jobs -run_train -run_pred -run_feature
 ```
-We provide a pre-trained model based on 859 serum metabolomics samples (210 healthy individuals, 323 lung nodules, 326 lung cancer) for academic use.
-
+We provide a pre-trained model based on 859 serum metabolomics samples (210 healthy individuals, 323 lung nodules, 326 lung cancer) for academic use. Please contact the author for access.
 
 **Command Line Arguments:**
 
@@ -118,6 +117,20 @@ We provide a pre-trained model based on 859 serum metabolomics samples (210 heal
   -    `-plot_cm`: Plots the confusion matrix (Boolean).
 
 Please adjust and expand this explanation based on the specific parameters and usage of your project. This example will help users understand how to run your project and utilize different command-line arguments.
+
+# Demo
+
+**Run with Demo Data**
+```bash
+python mainRun.py -data ../example/data/ -label ../example/label.txt -out ../jobs -run_train -run_pred -run_feature
+```
+
+**Result**
+`cd ../jobs/`
+
+
+
+**Run Time**
 
 
 
