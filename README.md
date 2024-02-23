@@ -76,7 +76,7 @@ bash install_dependencies.sh
 
 
 
-# Usage Guide
+# Demo
    
 You can run ``DeepMSProfiler`` using the following command:
 
@@ -118,19 +118,13 @@ We provide a pre-trained model based on 859 serum metabolomics samples (210 heal
 
 Please adjust and expand this explanation based on the specific parameters and usage of your project. This example will help users understand how to run your project and utilize different command-line arguments.
 
-# Demo
 
 **Run with Demo Data**
 ```bash
 python mainRun.py -data ../example/data/ -label ../example/label.txt -out ../jobs -run_train -run_pred -run_feature
 ```
 
-**Result**
-`cd ../jobs/`
 
-
-
-**Run Time**
 
 
 
