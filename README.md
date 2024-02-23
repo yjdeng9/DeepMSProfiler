@@ -121,6 +121,9 @@ We provide a pre-trained model based on 859 serum metabolomics samples (210 heal
 Please adjust and expand this explanation based on the specific parameters and usage of your project. This example will help users understand how to run your project and utilize different command-line arguments.
 
 # Demo
+
+The demo data can be downloaded from **[Baidu Netdisk](https://pan.baidu.com/s/14v82CMsFZwcTI13iWaTWxA)** `https://pan.baidu.com/s/14v82CMsFZwcTI13iWaTWxA`, Passward: `acaa`
+
 **Run with Demo Data**
 ```bash
 python mainRun.py -data ../example/data/ -label ../example/label.txt -out ../jobs -run_train -run_pred -run_feature
