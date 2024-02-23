@@ -55,8 +55,9 @@ The ``DeepMSProfiler`` package is designed to support development in environment
 The ``DeepMSProfiler`` package development version has been tested on CentOS 7 but is also compatible with Windows environments. It is essential to ensure that the Python environment and dependencies are properly installed. The software requirements are as follows:
 
 - **Operating System Compatibility:** CentOS 7 (tested), Windows (compatible)
-- **Python Version:** Python > 3.6
+- **Python Version:** Python >= 3.6
 - **TensorFlow Version:** TensorFlow == 2.2.0
+- **Keras Version** Keras == 2.3.1
 
 ### Python Dependencies
 
