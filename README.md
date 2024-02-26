@@ -28,6 +28,7 @@ Unlike traditional metabolomics data analysis tools, ``DeepMSProfiler`` is a too
 ![image](https://github.com/yjdeng9/DeepMSProfiler/assets/130525414/1ce3d2e8-60eb-40bf-afa8-ffb5dddb6b25)
 
 
+
 ## Why DeepMSProfiler?
 
 DeepMSProfiler stands out due to the following advantages:
@@ -191,8 +192,10 @@ python mainRun.py -data ../example/data/ -label ../example/label.txt -out ../job
 
 **Run with Pretrain Model**
 ```bash
-python mainRun.py -data ../example/data/ -label ../example/label.txt -out ../jobs -run_pred -pretrain ../example/pretrain_model -plot_auc -plot_cm
+python mainRun.py -data ../example/data/ -label ../example/label.txt -out ../jobs -run_pred -pretrain ../example/pretrain_model -plot_cm
 ```
+
+![image](https://github.com/yjdeng9/DeepMSProfiler/blob/main/example/result/confusion_matrix.svg)
 
 
 # License
