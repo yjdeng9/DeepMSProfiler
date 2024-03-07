@@ -71,8 +71,8 @@ def run_model_with_args(model, x_data, y_data, samples, args, run_args, save_dir
 
     callbacks = [callback.EarlyStoppingWithThreshold(monitor='val_accuracy', threshold=threshold, patience=10)]
 
-    print(x_data.shape)
-    print(y_data.shape)
+    # print(x_data.shape)
+    # print(y_data.shape)
 
     x_train, x_val, y_train, y_val, samples_train, samples_val = split_with_samples(x_data, y_data, samples, test_size=0.25)
     history = model.fit(x_train, y_train, batch_size=batch_size, epochs=epoch, validation_data=(x_val, y_val),

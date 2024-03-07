@@ -195,7 +195,7 @@ def step2_feature(args, job_dir, test_data, test_label, test_samples):
     if not os.path.exists(os.path.join(job_dir, 'feature_results')):
         os.makedirs(os.path.join(job_dir, 'feature_results'))
 
-    print(model_dir)
+    # print(model_dir)
 
     get_feature_with_args(model_dir, mode, x_data, y_data, out_path)
 
@@ -203,7 +203,7 @@ def step2_feature(args, job_dir, test_data, test_label, test_samples):
 def main():
     args = args_setting()
     # args.data_dir = 'C:/Users/yong-/Desktop/metaTest/metaTensor/_code_ocean/data/LCMS/denoise/batch1/cancer'
-    args.data_dir = '../../data/P/META/batch1/cancer/'
+    # args.data_dir = '../../data/P/META/batch1/cancer/'
 
     # 创建一个文件夹用于工作目录
     job_name = 'jobs007'
@@ -255,16 +255,20 @@ def args_setting():
     parser.add_argument('-random_split', type=bool, dest='random_split', default=False)
     parser.add_argument('-out', type=str, dest='out_dir', default='../jobs')
 
-    parser.add_argument('-run_train', type=bool, dest='run_train', default=False)
-    parser.add_argument('-run_pred', type=bool, dest='run_pred', default=False)
-    parser.add_argument('-run_feature', type=bool, dest='run_feature', default=True)
+    # parser.add_argument('-run_train', type=bool, dest='run_train', default=False)
+    # parser.add_argument('-run_pred', type=bool, dest='run_pred', default=False)
+    # parser.add_argument('-run_feature', type=bool, dest='run_feature', default=True)
+
+    parser.add_argument('-run_train', dest='run_train', action='store_true', help='run train')
+    parser.add_argument('-run_pred', dest='run_pred', action='store_true', help='run pred')
+    parser.add_argument('-run_feature', dest='run_feature', action='store_true', help='run feature')
 
     parser.add_argument('-arch', type=str, dest='architecture', default='DenseNet121')
     parser.add_argument('-pretrain',dest='pretrain_path', default=None)
     parser.add_argument('-lr', type=float, dest='lr', default=1e-4)
     parser.add_argument('-opt', type=str, dest='optimizer', default='adam')
     parser.add_argument('-batch', type=int, dest='batch_size', default=8)
-    parser.add_argument('-epoch', type=int, dest='epoch', default=2)
+    parser.add_argument('-epoch', type=int, dest='epoch', default=200)
     parser.add_argument('-run', type=int, dest='run_time', default=10)
 
     parser.add_argument('-models', type=str, dest='models_for_pred', default='use_old')
@@ -278,4 +282,8 @@ def args_setting():
 
 
 if __name__ == '__main__':
+    os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+    print("Start in %s" % time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
     main()
+    print("End in %s" % time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
+

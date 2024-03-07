@@ -69,9 +69,9 @@ def pred_by_args(x_data, y_data, model_dir, mode='ensmeble', boost=False,plot_cm
     elif mode == 'ensemble':
         model_list = []
 
-        print('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>debuging>>>>>>>>>>>>>>>>>>>>>>>>>>>')
-        print(model_dir)
-        print('')
+        # print('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>debuging>>>>>>>>>>>>>>>>>>>>>>>>>>>')
+        # print(model_dir)
+        # print('')
 
         for model_name in os.listdir(model_dir):
             model_path = os.path.join(model_dir, model_name, 'model.h5')
