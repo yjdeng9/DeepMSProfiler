@@ -192,11 +192,20 @@ python mainRun.py -data ../example/data/ -label ../example/label.txt -out ../job
 
 **Run with Pretrain Model**
 ```bash
-python mainRun.py -data ../example/data/ -label ../example/label.txt -out ../jobs -run_pred -pretrain ../example/pretrain_model -plot_cm
+python mainRun.py -data ../example/all_data/ -label ../example/all_label.txt -out ../jobs -run_pred -pretrain ../example/pretrain_model -plot_cm
 ```
 
 ![image](https://github.com/yjdeng9/DeepMSProfiler/blob/main/example/result/confusion_matrix.svg)
 
+**Show Feature Heatmaps**
+```bash
+python mainRun.py -data ../example/data/ -label ../example/label.txt -out ../jobs -run_feature
+```
+After `run_feature` ,the heatmaps were saved in `../jobs/jobs007/feature_results/ensemble_RISE.npy`, so then we can show feature heatmaps by different classes.
+```bash
+python showFeature.py
+```
+![image](https://github.com/yjdeng9/DeepMSProfiler/blob/main/example/result/ensemble_RISE.png)
 
 # License
 
