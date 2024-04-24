@@ -201,7 +201,7 @@ python mainRun.py -data ../example/all_data/ -label ../example/all_label.txt -ou
 ```bash
 python mainRun.py -data ../example/data/ -label ../example/label.txt -out ../jobs -run_feature
 ```
-After `run_feature` ,the heatmaps were saved in `../jobs/jobs007/feature_results/ensemble_RISE.npy`, so then we can show feature heatmaps by different classes.
+After `run_feature` ,the heatmaps were saved in `../jobs/jobs007/feature_results/ensemble_RISE.npy`, so we can then show the feature heatmaps for different classes.
 ```bash
 python showFeature.py
 ```
