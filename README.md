@@ -72,6 +72,8 @@ Please refer to the `requirements.txt` script for installing Python dependencies
 ```
 pip install DeepMSProfiler
 ```
+https://pypi.org/project/DeepMSProfiler/
+
 
 **Install from source code:**
 ```
