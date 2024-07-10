@@ -128,9 +128,23 @@ Please adjust and expand this explanation based on the specific parameters and u
 
 # Demo
 
-The demo data can be downloaded from **[Baidu Netdisk](https://pan.baidu.com/s/14v82CMsFZwcTI13iWaTWxA):** `https://pan.baidu.com/s/14v82CMsFZwcTI13iWaTWxA`, **Passward:** `acaa`
+The demo data can be downloaded from `example` dir or **[Baidu Netdisk](https://pan.baidu.com/s/14v82CMsFZwcTI13iWaTWxA):** `https://pan.baidu.com/s/14v82CMsFZwcTI13iWaTWxA`, **Passward:** `acaa`
 
-**Run with Demo Data**
+The demo files are in. npy format. If you upload a file in. mzML format, and the script will automatically convert to. npy format automatically.
+
+**Run with Demo Data (PyPI Version)**
+```bash
+from DeepMSProfiler import *
+
+
+run_train(datalist_path='DeepMSProfiler/example/datalist.txt',data_dir='DeepMSProfiler/example/data',
+          job_dir='DeepMSProfiler/example/out/jobs007',epoch=2)
+run_predict(job_dir = 'DeepMSProfiler/example/out/jobs007',plot_auc=True,plot_cm=True)
+run_feature(job_dir='DeepMSProfiler/example/out/jobs007')
+show_feature(job_dir='DeepMSProfiler/example/out/jobs007',mode='ensemble')
+```
+
+**Run with Demo Data (Github Source Code Version)**
 ```bash
 python mainRun.py -data ../example/data/ -label ../example/label.txt -out ../jobs -run_train -run_pred -run_feature
 ```
