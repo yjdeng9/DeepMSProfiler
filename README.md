@@ -1,6 +1,7 @@
 
 # DeepMSProfiler
 
+[![DOI](https://zenodo.org/badge/684497797.svg)](https://zenodo.org/doi/10.5281/zenodo.12740369)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![PEP8](https://img.shields.io/badge/code%20style-pep8-orange.svg)](https://www.python.org/dev/peps/pep-0008/)
 
