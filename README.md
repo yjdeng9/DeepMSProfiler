@@ -241,10 +241,10 @@ This project is licensed under the Apache License, Version 2.0 and is open for a
 
 # Citation
 
-Paper is in the submission process.
+The Paper is published in **Nature Communications**.
 
 For usage of the package and associated manuscript, please cite:
-    **An explainable end-to-end deep learning method for direct analysis of mass spectrometry data to reveal disease-specific metabolic profiles.** Yongjie Deng, Weizhong Li and et al.
+    [**Deng, Y., Yao, Y., Wang, Y. et al. An end-to-end deep learning method for mass spectrometry data analysis to reveal disease-specific metabolic profiles. Nat Commun 15, 7136 (2024).**](https://www.nature.com/articles/s41467-024-51433-3#citeas)
 
 
 
